@@ -31,7 +31,7 @@ public class WeatherTest {
             testSuite = project.getTestSuiteByName(testSuiteName);
             testCase = testSuite.getTestCaseByName(testCaseName);
         } catch (SoapUIException | XmlException | IOException ex){
-            Logger.getLogger(AccountTest.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(WeatherTest.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
