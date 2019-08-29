@@ -12,6 +12,8 @@ import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.squashtest.ta.galaxia.squash.tf.galaxia.annotations.TFMetadata;
+
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -35,6 +37,7 @@ public class WeatherTest {
         }
     }
 
+    @TFMetadata(key = "linked-TC", value = "cd9847b5-a7aa-406a-9792-e88b1d03c8cf")
     @Test
     public void contactTest(){
         TestCaseRunner runner = testCase.run(new PropertiesMap(), false);
